@@ -1,0 +1,53 @@
+#gifs-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px;
+}
+
+.gif-card{
+    padding: 5px;
+    text-align: center;
+}
+
+.gif-photo{
+    max-width: 260px;
+}
+
+#show-more-btn{
+    background-color: #a8325e;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+
+/*screen sizes*/
+@media only screen and (max-width: 1250px) {
+    #gifs-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #gifs-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gif-card{
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #gifs-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gif-card{
+        padding: 0px;
+    }
+}
